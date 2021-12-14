@@ -1,0 +1,190 @@
+/* FEUILLE DE STYLES POUR TOUS LES STYLES DE L'APPLICATION 
+(Remarque : à plusieurs reprises, l'attribut color:black est précisé bien qu'il 
+ne soit pas utile ; ceci permet une validation du W3C sans avertissement. 
+Idem pour background-color) */
+
+/* Style de base pour la page (couleur fond : ocre, couleur texte : noir) */
+.basePage 
+{
+   background-color:#2c3e50;
+   color:white;
+   font:11px Arial, Helvetica, sans-serif;
+}
+
+/* Style pour le titre (couleur du texte : rouge) */
+.titre 
+{
+   color: #F7DC6F;
+   font:30px Arial, Helvetica, sans-serif;
+   text-align:center;
+}
+
+/* Style pour le texte de 2ème niveau du titre */
+.texteNiveau2
+{
+   font:20px Arial, Helvetica, sans-serif;
+}
+
+/* Style pour le texte de la page d'accueil (couleur : bleu foncé avec mise en
+gras et en italique) */
+.texteAccueil
+{
+   color:white;       
+   font:14px Georgia, "Times New Roman", Times, serif;
+   font-weight:bold;
+}
+
+/* Style pour le texte dans les différentes balises citées */
+td,tr 
+{
+   font:11px Arial, Helvetica, sans-serif;
+}
+
+/* STYLES POUR LES MENUS */
+
+/* Style du tableau contenant les éléments de menu : fond bleu ciel, épaisseur 
+1px, espacement de 3x entre la bordure gauche de chaque cellule et le texte et
+texte centré */
+table.tabMenu td
+{
+   background-color:#6698F1;
+   color:white;
+   border: 1px solid #85C1E9;
+   padding-left:3px;
+   width:32.5%;
+   height:18px;
+   line-height: 18px;
+   text-align:center;
+   display: inline-block;
+
+} 
+
+/* Style pour les éléments du menu (mise en gras et italique) */ 
+.menu
+{
+   font:11px Georgia, "Times New Roman", Times, serif;
+   font-weight:bold;
+
+   text-decoration: none;
+}
+.menu a{
+   text-decoration: none;
+   color: #FAFBE2;
+   display: block;
+}
+table.tabMenu .menu a:hover{
+   background-color: #2B5BB1;
+}
+
+
+
+/* STYLES POUR LES TABLEAUX QUADRILLÉS */
+
+/* Style des tableaux avec quadrillage : épaisseur du quadrillage 1px, 
+espacement de 3x entre la bordure gauche de chaque cellule et le texte */
+table.tabQuadrille td
+{
+   border: 1px solid #345AB4;
+   padding-left:3px;
+} 
+
+/* Style pour la 1ère ligne d'en-tête des tableaux quadrillés : fond avec 
+nuances de jaune et texte centré */
+tr.enTeteTabQuad
+{
+   background-color: #117864;
+   height:21px;
+   text-align:center;
+   color: #F2F4FC;
+} 
+
+/* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux 
+quadrillés : fond écru et texte centré */
+tr.ligneTabQuad 
+{
+   background-color:#F2F4FC;
+   text-align:center;
+   color:black;
+}
+
+
+
+
+/* STYLES POUR LES TABLEAUX NON QUADRILLÉS */
+
+/* Style des tableaux sans quadrillage : fond écru, épaisseur de la bordure 
+1px */
+table.tabNonQuadrille 
+{
+   background-color:#F2F4FC;
+   border: 1px solid #345AB4;
+   color:black;
+   box-shadow: 5px 5px 5px #03133A;
+}
+ 
+/* Style pour la ligne d'en-tête des tableaux non quadrillés : fond avec 
+nuances de jaune, texte centré et en gras et trait bas pour séparer l'en-tête du 
+corps du tableau */
+tr.enTeteTabNonQuad td
+{
+   background-color: #117864;
+   height:21px;
+   color: #F2F4FC;
+   text-align:center;
+   font-weight:bold;
+   border-bottom:1px solid #777777;
+} 
+
+/* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux non 
+quadrillés : fond écru, hauteur plus importante, texte aligné à gauche et 
+espacement de 3px entre la bordure gauche de chaque cellule et le texte */
+tr.ligneTabNonQuad td
+{
+   background-color:#F2F4FC;
+   height:28px;
+   text-align:left;
+   padding-left:3px;
+   color:black;
+} 
+
+
+
+
+
+/* STYLE POUR LES MESSAGES D'ERREUR AFFICHÉS EN BAS DE PAGE (FOND : OCRE, 
+COULEUR DU TEXTE : ROSE) */
+
+.msgErreur
+{
+   background-color:#FCF3CF;
+   color:#CB4335;
+   font-size:14px;
+}
+
+/* STYLES POUR LES ATTRIBUTIONS */
+
+/* Fond blanc */
+td.reserveSiLien
+{
+   background-color:#FFFFFF;
+   color:black;
+}
+
+/* Fond parme */
+td.reserve
+{
+   background-color:#FFBEFF;
+   color:black;
+}
+/*pour les liens*/
+a{
+   text-decoration: none;
+   color: #6698F1;
+   font-weight: bold;
+}
+/*pour les input*/
+input{
+   border: 1.2px black solid;
+   border-radius: 7px;
+   font-weight:bold;
+}
